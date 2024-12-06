@@ -1,59 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="chatapp">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>chatapp</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "4271166884";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilmal Sabda Fathir | Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+    <div class="container">
+        <header class="glass-nav">
+            <nav>
+                <div class="logo">ISF</div>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="terminal-background">
+                    <div class="terminal-container glass-card">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="terminal-button red"></span>
+                                <span class="terminal-button yellow"></span>
+                                <span class="terminal-button green"></span>
+                            </div>
+                            <div class="terminal-title">isaf@portfolio:~</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="command-line">
+                                <span class="prompt">$</span>
+                                <span class="command"></span>
+                            </div>
+                            <div class="terminal-output"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <div class="profile-image">
+                        <img src="https://avatars.githubusercontent.com/u/88388332?v=4" alt="Ilmal Sabda Fathir">
+                    </div>
+                    <div class="hero-text">
+                        <h1>Ilmal Sabda Fathir</h1>
+                        <p class="subtitle">Software Developer | Tech Enthusiast</p>
+                        <p class="bio">"There is no 0% day."</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn primary">Get in Touch</a>
+                            <a href="#projects" class="btn secondary">View Work</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/isaffathir" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/isaffathir_" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/in/isaffathir" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about glass-card">
+                <h2><span class="accent">/</span>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! I'm a passionate software developer based in Indonesia. I specialize in creating innovative solutions and pushing the boundaries of technology. With a strong focus on mobile and web development, I bring creativity and technical expertise to every project.</p>
+                        <p>Currently working at meogjachips!, I'm dedicated to crafting efficient and elegant solutions to complex problems.</p>
+                    </div>
+                    <div class="skills">
+                        <h3>Tech Stack</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Mobile Dev</span>
+                            <span class="skill-tag">KivyMD</span>
+                            <span class="skill-tag">Web Development</span>
+                            <span class="skill-tag">Android</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects">
+                <h2><span class="accent">/</span>Featured Work</h2>
+                <div class="project-grid">
+                    <div class="project-card glass-card">
+                        <div class="project-content">
+                            <h3>Meogjachips</h3>
+                            <p>Modern Mobile Social Media App built with Python. A comprehensive social platform with modern features and intuitive user interface.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Mobile</span>
+                                <span class="tech-tag">Social Media</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/isaffathir/meogjachips" class="btn secondary" target="_blank">View Project</a>
+                            <a href="https://github.com/isaffathir/meogjachips" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card">
+                        <div class="project-content">
+                            <h3>KivyMD Setup</h3>
+                            <p>A comprehensive setup project for creating applications using KivyMD framework. Includes boilerplate code and best practices.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">KivyMD</span>
+                                <span class="tech-tag">UI/UX</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/isaffathir/kivymd-setup" class="btn secondary" target="_blank">View Project</a>
+                            <a href="https://github.com/isaffathir/kivymd-setup" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card">
+                        <div class="project-content">
+                            <h3>Kokoronomoto</h3>
+                            <p>An innovative project showcasing modern development practices and creative problem-solving approaches.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Development</span>
+                                <span class="tech-tag">Innovation</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/isaffathir/kokoronomoto" class="btn secondary" target="_blank">View Project</a>
+                            <a href="https://github.com/isaffathir/kokoronomoto" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact glass-card">
+                <h2><span class="accent">/</span>Get in Touch</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Ilmal Sabda Fathir. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
